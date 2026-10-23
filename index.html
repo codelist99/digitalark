@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071326">
+  <title>Digital Ark — Offer Command</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="mark">DA</span><div><strong>Digital Ark</strong><small>Offer Command Center</small></div></div>
+    <div class="live"><i></i><span>LIVE OPERATIONS</span><b id="clock"></b></div>
+  </header>
+  <nav class="offer-tabs" id="offer-tabs" aria-label="Offers"></nav>
+  <main>
+    <section class="toolbar">
+      <div><span class="eyebrow">ACTIVE WORKSPACE</span><h1 id="offer-name">Offer dashboard</h1><p id="offer-description"></p></div>
+      <div class="actions"><span class="status" id="status"><i></i> Checking</span><button id="reload">↻ Refresh</button><a id="open" target="_blank" rel="noopener">Open dashboard ↗</a></div>
+    </section>
+    <section class="frame-shell">
+      <div class="loading" id="loading"><span></span>Loading offer operations…</div>
+      <iframe id="dashboard" title="Offer admin dashboard" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>
